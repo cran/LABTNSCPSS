@@ -1,4 +1,4 @@
-#' @import checkmate data.table stats stringi utils
+#' @import checkmate data.table stringi utils
 #' @keywords internal
 "_PACKAGE"
 

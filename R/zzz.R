@@ -1,8 +1,30 @@
-# .onAttach <- function(libname, pkgname) {
-#   tick <- stats::rbinom(n = 1, size = 1, prob = 0.05)
-#   if (tick == 1) {
-#     packageStartupMessage(paste0("This is {comorbidity} version ", utils::packageVersion("comorbidity"), "."))
-#     packageStartupMessage("A lot has changed since the pre-1.0.0 release on CRAN, please check-out breaking changes here:")
-#     packageStartupMessage("-> https://ellessenne.github.io/comorbidity/articles/C-changes.html")
-#   }
-# }
+# zzz.R
+# Global variable declarations to satisfy R CMD check (NSE, data.table, dplyr)
+
+.onLoad <- function(libname, pkgname) {
+  if (getRversion() >= "2.15.1") {
+    utils::globalVariables(c(
+
+      # magrittr / dplyr placeholders
+      ".", ".data",
+
+      # Core identifiers
+      "id", "code", "patient_id", "episode_id", "start_date",
+      "updated_icd_codes", "row_id", "present",
+
+      # ICD variables
+      "ICD", "frailty_category", "MorbiFrailtyCategory",
+      "category", "category_codes", "ord",
+
+      # Chronic pathology columns
+      "chronique_code_cat1", "chronique_code_cat2",
+      "cleaned_chronique_code_cat1", "cleaned_chronique_code_cat2",
+      "basal_codes",
+
+      # Frailty / Morbi-frailty flags
+      "DiabNC", "DiabC", "HBPNoComp", "HBPComp",
+      "Frailty_labtns_cpss", "Morbi_frailty_labtns_cpss"
+
+    ))
+  }
+}

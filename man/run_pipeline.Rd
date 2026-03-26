@@ -2,24 +2,57 @@
 % Please edit documentation in R/run_pipeline.R
 \name{run_pipeline}
 \alias{run_pipeline}
-\title{Run the LABTNSCPSS comorbidity + frailty pipeline}
+\title{Run the LABTNSCPSS Comorbidity-Frailty Pipeline}
 \usage{
-run_pipeline(input_file, col_mapping, coding_system = NULL, out_dir = NULL)
+run_pipeline(
+  input_file,
+  col_mapping,
+  coding_system = c("ICD-10-CA", "ICD-10-CM", "ICD-11"),
+  out_dir = tempdir()
+)
 }
 \arguments{
-\item{input_file}{Path to the input CSV file.}
+\item{input_file}{Path to input CSV file.}
 
-\item{col_mapping}{Named list mapping standard names to the user's column names.}
+\item{col_mapping}{Named list mapping required fields to column names in `input_file`.
+Must include: `patient_id`, `ICD`, `start_date`, `end_date`, `episode_id`.}
 
-\item{coding_system}{Coding system used (e.g., "ICD-10-CA"). Optional; used by internal functions when applicable.}
+\item{coding_system}{One of: "ICD-10-CA", "ICD-10-CM", "ICD-11".}
 
-\item{out_dir}{Output directory for generated files. If NULL, writes next to `input_file`.}
+\item{out_dir}{Directory where output CSV files will be written (default: `tempdir()`).}
 }
 \value{
-A named list of `data.frame`s returned by `Comorbidity_Frailty_Calculation()`.
-  Elements typically include comorbidity and frailty summary tables.
+A named list containing:
+\describe{
+  \item{scores_final}{Final combined scores (comorbidity + frailty).}
+  \item{final_data_charlson}{Charlson scores by episode.}
+  \item{final_data_elixhauser}{Elixhauser scores by episode.}
+  \item{final_data_combined}{Combined comorbidity scores by episode.}
+  \item{score_pop_Elixh}{Weighted Elixhauser score (ICD-10-CA only; may be NULL).}
+}
 }
 \description{
-Runs data cleaning, chronic pathology propagation, frailty calculation,
-and comorbidity/frailty scoring.
+Computes Charlson, Elixhauser, Combined Comorbidity,
+Frailty, and Morbidity-Frailty scores from episode-level data.
+}
+\examples{
+library(LABTNSCPSS)
+f <- system.file("extdata", "testpackage.csv", package = "LABTNSCPSS")
+
+col_mapping <- list(
+  patient_id = "trajectoire_id",
+  ICD        = "diagnostic_code",
+  start_date = "date_debut",
+  end_date   = "date_fin",
+  episode_id = "episode_id"
+)
+
+res <- run_pipeline(
+  input_file = f,
+  col_mapping = col_mapping,
+  coding_system = "ICD-10-CA",
+  out_dir = tempdir()
+)
+names(res)
+
 }

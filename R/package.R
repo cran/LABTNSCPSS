@@ -7,5 +7,4 @@
 #' @name LABTNSCPSS
 #'
 #' @importFrom utils read.csv write.csv
-#' @importFrom ggplot2 ggplot aes geom_point
 "_PACKAGE"
