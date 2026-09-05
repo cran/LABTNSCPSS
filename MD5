@@ -1,4 +1,4 @@
-3ffdf0595f16357f0a9bb4df16199e62 *DESCRIPTION
+2939d2a57f85e45c2a7b4cc9d5834b89 *DESCRIPTION
 54e5ad1e2939d4782e353e8e7e1e12dc *NAMESPACE
 288edfefc7c6acb57a4ad2b77d5d2085 *R/Chronic_Pathologies.R
 e6db1c83a461aba57f3beb64adbbf495 *R/Comorbidity_Frailty_Calculation.R
@@ -19,7 +19,6 @@ f7658c011b43d833556521dfed7f2b06 *R/matchit.R
 c019e34e0e1f9ca48c99c1ea2920efaa *R/package.R
 5a71e2807d29c7544aa6826c63f6188c *R/run_pipeline.R
 6e575d55ccf1b5a0d4061e227268b633 *R/score.R
-051fa0c83eb1e99e62420a0fa1e5586e *R/setup_package.R
 44e41b2b162e09f572bfe47243c3e8ef *R/sysdata.rda
 9cecd1a67a42e7e524e5e9a6f8743dbc *R/tidy.R
 062040820b5ff41466813d7640359acf *R/utils-pipe.R
