@@ -15,6 +15,7 @@ Tools for calculating comorbidity indices and frailty scores from ICD coding sys
 Useful links:
 \itemize{
   \item \url{https://github.com/bayaniazadeh/LabTNSCPSSPackage}
+  \item \doi{10.1016/j.ijmedinf.2026.106709}
   \item Report bugs at \url{https://github.com/bayaniazadeh/LabTNSCPSSPackage/issues}
 }
 
@@ -22,6 +23,7 @@ Useful links:
 Useful links:
 \itemize{
   \item \url{https://github.com/bayaniazadeh/LabTNSCPSSPackage}
+  \item \doi{10.1016/j.ijmedinf.2026.106709}
   \item Report bugs at \url{https://github.com/bayaniazadeh/LabTNSCPSSPackage/issues}
 }
 

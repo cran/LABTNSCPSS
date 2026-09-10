@@ -1,0 +1,15 @@
+bibentry(
+  bibtype = "Article",
+  title = "A semantic-based carry-forward approach: Uncovering chronic disease burden in real-world data analysis",
+  author = c(
+    person("Jean Noël", "Nikiema"),
+    person("Azadeh", "Bayani"),
+    person("Michèle", "Bally")
+  ),
+  journal = "International Journal of Medical Informatics",
+  year = "2026",
+  volume = "222",
+  number = "106709",
+  doi = "10.1016/j.ijmedinf.2026.106709",
+  url = "https://doi.org/10.1016/j.ijmedinf.2026.106709",
+)

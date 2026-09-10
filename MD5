@@ -1,4 +1,4 @@
-2939d2a57f85e45c2a7b4cc9d5834b89 *DESCRIPTION
+721bc76a68db569134d8e2c9b5993c6b *DESCRIPTION
 54e5ad1e2939d4782e353e8e7e1e12dc *NAMESPACE
 288edfefc7c6acb57a4ad2b77d5d2085 *R/Chronic_Pathologies.R
 e6db1c83a461aba57f3beb64adbbf495 *R/Comorbidity_Frailty_Calculation.R
@@ -19,13 +19,15 @@ f7658c011b43d833556521dfed7f2b06 *R/matchit.R
 c019e34e0e1f9ca48c99c1ea2920efaa *R/package.R
 5a71e2807d29c7544aa6826c63f6188c *R/run_pipeline.R
 6e575d55ccf1b5a0d4061e227268b633 *R/score.R
+051fa0c83eb1e99e62420a0fa1e5586e *R/setup_package.R
 44e41b2b162e09f572bfe47243c3e8ef *R/sysdata.rda
 9cecd1a67a42e7e524e5e9a6f8743dbc *R/tidy.R
 062040820b5ff41466813d7640359acf *R/utils-pipe.R
 c949ed77fa544082a3323d958d763f4f *R/utils_coding_system.R
 eb023d6080185a25bc0ad53f093b28cc *R/weights_map.R
 f11185c030c90752de0e3bfa510ffad4 *R/zzz.R
-40550027b06cb522b20943641819b44a *README.md
+fe8469de3b9358997c49d0e892c962b9 *README.md
+aa5e5a2cbfaea3d9b6cdbe378ac48cee *build/partial.rdb
 849c80adba558b0321232fc4c3bc56bb *data/Basal_Codes.rda
 1b2180cdca269d1f395e23bfc0d9c751 *data/Code_Categories.rda
 756c17ed73b794b0ab11be428b210d4a *data/Frailty_Comorbidity_Mapping.rda
@@ -45,6 +47,7 @@ e014547c827a64ec6002dc0009618a39 *data/icd10_2011.rda
 8704158f7ba4b3c5b1766ee0bc60a062 *data/icd10cm_2022.rda
 dfda0ca474725502230544906c8423a5 *data/icd9_2015.rda
 eb4a8c01e7b02956d497ec98cfa0ffe7 *data/nhds2010.rda
+8443e069137128f141d50746f12abc7d *inst/CITATION
 0249818429c8079288c0a7290bd584ef *inst/REFERENCES.md
 102b1b86402dc7bddba1a51824cbbabc *inst/extdata/testpackage.csv
 70b9cad78e94ba8057f6405f692326f2 *man/Basal_Codes.Rd
@@ -59,8 +62,8 @@ d5f94e29c266c480cbe68f1470b2b700 *man/Frailty_mapping.Rd
 b8c5492ea0115bf6d5453b9f21260cc0 *man/ICD10CM_categorisation.Rd
 f298ff07e0c2eac820a2bd7076f0f556 *man/ICD11_Basal_Codes.Rd
 91824661b52f231a149b498fd46f5d44 *man/ICD11_categorisation.Rd
-5b9ba040d88da2207a9d0e2fe123c9b5 *man/LABTNSCPSS-package.Rd
-c9f8bdc8094c21fd6c0bf8274adbb9b0 *man/LABTNSCPSS.Rd
+c39b9699cc096abd7359f6a2d10927f5 *man/LABTNSCPSS-package.Rd
+4719c271ee3e179457124cb3b1a4e13e *man/LABTNSCPSS.Rd
 e477a9c7663df089c10e2e3c5304d476 *man/australia10.Rd
 d05480ae7f699cae241fc80f9f1b55fe *man/chronic_pathologies.Rd
 bc5217e79919b5fac4e20dc309825708 *man/comorbidity.Rd

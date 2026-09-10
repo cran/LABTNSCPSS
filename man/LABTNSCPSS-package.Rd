@@ -11,6 +11,7 @@ Computes comorbidity indices and combined frailty scores for multiple ICD coding
 Useful links:
 \itemize{
   \item \url{https://github.com/bayaniazadeh/LabTNSCPSSPackage}
+  \item \doi{10.1016/j.ijmedinf.2026.106709}
   \item Report bugs at \url{https://github.com/bayaniazadeh/LabTNSCPSSPackage/issues}
 }
 
