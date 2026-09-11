@@ -1,27 +1,55 @@
 Package: LABTNSCPSS
 Type: Package
-Version: 1.0.4
+Version: 1.0.5
 Title: Calculation of Comorbidity and Frailty Scores
-Description: Computes comorbidity indices and combined frailty scores for multiple ICD coding systems, including ICD-10-CA, ICD-10-CM, and ICD-11. The package provides tools to preprocess episode data, map diagnosis codes to chronic categories, propagate conditions across episodes, and generate comorbidity and frailty measures. The methods implemented are original to this package and were developed by the authors for research applications; a manuscript describing the methodology is currently in preparation.
-Authors@R: c(person(given="Azadeh", family="Bayani", role=c("aut","cre"), email="azadeh.bayani@umontreal.ca", comment=c(ORCID="0009-0002-7707-9602")), person(given="Jean Noel", family="Nikiema", role="ctb", email="jean.nikiema@umontreal.ca"), person(given="Michèle", family="Bally", role="ctb", email="michele.bally.chum@ssss.gouv.qc.ca"))
+Description: Computes comorbidity indices and combined frailty scores for
+    multiple ICD coding systems, including ICD-10-CA, ICD-10-CM, and ICD-11.
+    The package provides tools to preprocess episode data, map diagnosis codes
+    to chronic categories, propagate conditions across episodes, and generate
+    comorbidity and frailty measures. The methodology is described in
+    Nikiema, Bayani, and Bally (2026), "A Semantic-Based Carry-Forward
+    Approach: Uncovering Chronic Disease Burden in Real-World Data Analysis",
+    International Journal of Medical Informatics, article 106709
+    <doi:10.1016/j.ijmedinf.2026.106709>.
+Authors@R: c(
+    person(
+        given = "Azadeh",
+        family = "Bayani",
+        role = c("aut", "cre"),
+        email = "azadeh.bayani@umontreal.ca",
+        comment = c(ORCID = "0009-0002-7707-9602")
+    ),
+    person(
+        given = "Jean Noel",
+        family = "Nikiema",
+        role = "ctb",
+        email = "jean.nikiema@umontreal.ca"
+    ),
+    person(
+        given = "Michèle",
+        family = "Bally",
+        role = "ctb",
+        email = "michele.bally.chum@ssss.gouv.qc.ca"
+    )
+    )
 URL: https://github.com/bayaniazadeh/LabTNSCPSSPackage,
         https://doi.org/10.1016/j.ijmedinf.2026.106709
 BugReports: https://github.com/bayaniazadeh/LabTNSCPSSPackage/issues
 License: GPL-3
 Depends: R (>= 4.3.0)
-Imports: dplyr, magrittr, tibble, checkmate, tidyselect, data.table,
-        stringi, lubridate, purrr, tidyr, glue
+Imports: checkmate, data.table, dplyr, glue, lubridate, magrittr,
+        purrr, stringi, tibble, tidyr, tidyselect
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2026-09-10 13:26:48 UTC; officetest
+Packaged: 2026-09-11 13:27:23 UTC; officetest
 Author: Azadeh Bayani [aut, cre] (ORCID:
     <https://orcid.org/0009-0002-7707-9602>),
   Jean Noel Nikiema [ctb],
   Michèle Bally [ctb]
 Maintainer: Azadeh Bayani <azadeh.bayani@umontreal.ca>
 Repository: CRAN
-Date/Publication: 2026-09-10 14:20:21 UTC
+Date/Publication: 2026-09-11 14:30:20 UTC

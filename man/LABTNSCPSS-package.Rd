@@ -5,7 +5,7 @@
 \alias{LABTNSCPSS-package}
 \title{LABTNSCPSS: Calculation of Comorbidity and Frailty Scores}
 \description{
-Computes comorbidity indices and combined frailty scores for multiple ICD coding systems, including ICD-10-CA, ICD-10-CM, and ICD-11. The package provides tools to preprocess episode data, map diagnosis codes to chronic categories, propagate conditions across episodes, and generate comorbidity and frailty measures. The methods implemented are original to this package and were developed by the authors for research applications; a manuscript describing the methodology is currently in preparation.
+Computes comorbidity indices and combined frailty scores for multiple ICD coding systems, including ICD-10-CA, ICD-10-CM, and ICD-11. The package provides tools to preprocess episode data, map diagnosis codes to chronic categories, propagate conditions across episodes, and generate comorbidity and frailty measures. The methodology is described in Nikiema, Bayani, and Bally (2026), "A Semantic-Based Carry-Forward Approach: Uncovering Chronic Disease Burden in Real-World Data Analysis", International Journal of Medical Informatics, article 106709 \doi{10.1016/j.ijmedinf.2026.106709}.
 }
 \seealso{
 Useful links:

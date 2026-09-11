@@ -1,4 +1,4 @@
-721bc76a68db569134d8e2c9b5993c6b *DESCRIPTION
+f0fc37f6a8cc22e6c5dce09735207456 *DESCRIPTION
 54e5ad1e2939d4782e353e8e7e1e12dc *NAMESPACE
 288edfefc7c6acb57a4ad2b77d5d2085 *R/Chronic_Pathologies.R
 e6db1c83a461aba57f3beb64adbbf495 *R/Comorbidity_Frailty_Calculation.R
@@ -62,7 +62,7 @@ d5f94e29c266c480cbe68f1470b2b700 *man/Frailty_mapping.Rd
 b8c5492ea0115bf6d5453b9f21260cc0 *man/ICD10CM_categorisation.Rd
 f298ff07e0c2eac820a2bd7076f0f556 *man/ICD11_Basal_Codes.Rd
 91824661b52f231a149b498fd46f5d44 *man/ICD11_categorisation.Rd
-c39b9699cc096abd7359f6a2d10927f5 *man/LABTNSCPSS-package.Rd
+3e8dfed27fce787754074ca1dd3c236e *man/LABTNSCPSS-package.Rd
 4719c271ee3e179457124cb3b1a4e13e *man/LABTNSCPSS.Rd
 e477a9c7663df089c10e2e3c5304d476 *man/australia10.Rd
 d05480ae7f699cae241fc80f9f1b55fe *man/chronic_pathologies.Rd
